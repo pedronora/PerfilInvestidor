@@ -1,5 +1,6 @@
 package br.edu.infnet.analiseinvestidor
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +10,7 @@ class ResultadoActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityResultadoBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado)
@@ -16,8 +18,8 @@ class ResultadoActivity : AppCompatActivity() {
         binding = ActivityResultadoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.nomeInvestidor.text = "Olá, " + nome + "!"
-        binding.perfilInvestidor.text = "O seu perfil de investidor é " + resultadoPerfil() + "!"
+        binding.nomeInvestidor.text = "Olá, $nome!"
+        binding.perfilInvestidor.text = "O seu perfil de investidor é ${resultadoPerfil()}!"
 
         binding.reiniciarButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
