@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.4015625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="app/src/main/res/layout/activity_questions.xml" value="0.31068840579710144" />
         <entry key="app/src/main/res/layout/activity_resultado.xml" value="0.322463768115942" />
@@ -12,7 +13,7 @@
         <entry key="app/src/main/res/layout/fragment_question11.xml" value="0.33106884057971014" />
         <entry key="app/src/main/res/layout/fragment_question2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_question3.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_question4.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_question4.xml" value="0.286231884057971" />
         <entry key="app/src/main/res/layout/fragment_question5.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_question6.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_question7.xml" value="0.31521739130434784" />
@@ -21,6 +22,7 @@
         <entry key="app/src/main/res/layout/fragment_question83.xml" value="0.264" />
         <entry key="app/src/main/res/layout/fragment_question91.xml" value="0.33106884057971014" />
         <entry key="app/src/main/res/layout/fragment_question92.xml" value="0.33106884057971014" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.4015625" />
       </map>
     </option>
   </component>
