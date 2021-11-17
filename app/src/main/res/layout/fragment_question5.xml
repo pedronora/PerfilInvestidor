@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQuestion5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question5Fragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <TextView
+        android:id="@+id/question5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:padding="10dp"
+        android:text="@string/question5"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup5"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/avancarButton5"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/question5">
+
+        <RadioButton
+            android:id="@+id/rb5a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Resgataria toda a aplicação e aplicaria na poupança"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/rb5b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Manteria aplicação aguardando uma melhora do mercado"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb5c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Aumentaria a aplicação para aproveitar as oportunidades do mercado"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/avancarButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/avancar_button_label"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

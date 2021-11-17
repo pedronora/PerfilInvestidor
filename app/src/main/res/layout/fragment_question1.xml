@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQuestion1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question1Fragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/purple_700"
+        android:padding="10dp"
+        android:text="@string/question1"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/radioGroup1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/question1"
+        app:layout_constraintVertical_bias="0.216">
+
+        <RadioButton
+            android:id="@+id/rb1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menos de 6 meses"
+            android:textColor="@color/purple_700"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entre 6 meses e 1 ano"
+            android:textColor="@color/purple_700"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb1c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entre 1 ano e 3 anos"
+            android:textColor="@color/purple_700"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb1d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acima de 3 anos"
+            android:textColor="@color/purple_700"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/avancarButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/avancar_button_label"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
+        app:layout_constraintVertical_bias="0.618" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

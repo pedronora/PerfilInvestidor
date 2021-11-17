@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQuestion7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question7Fragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <TextView
+        android:id="@+id/question7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:padding="10dp"
+        android:text="@string/question7"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup7"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/avancarButton7"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/question7">
+
+        <RadioButton
+            android:id="@+id/rb7a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Conto com o rendimento dessas aplicações para complementar minha renda mensal"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="4dp"/>
+
+        <RadioButton
+            android:id="@+id/rb7b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Eventualmente posso resgatar parte das aplicações para fazer frente aos meus gastos. Contudo, não tenho intenção de resgatar no curto prazo e pretendo fazer aplicações regulares"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="4dp"/>
+
+        <RadioButton
+            android:id="@+id/rb7c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Não tenho intenção de resgatar no curto prazo, mas não pretendo realizar novas aplicações"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="4dp"/>
+
+        <RadioButton
+            android:id="@+id/rb7d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Não tenho intenção de resgatar no curto prazo e ainda pretende fazer aplicações regulares"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="4dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/avancarButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/avancar_button_label"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup7"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

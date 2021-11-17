@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQuestion6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question6Fragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <TextView
+        android:id="@+id/question6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:padding="10dp"
+        android:text="@string/question6"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup6"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/avancarButton6"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/question6">
+
+        <RadioButton
+            android:id="@+id/rb6a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Meu patrimônio não está aplicado ou está todo aplicado em renda fixa e/ou imóveis"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb6b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Menos de 25% em renda variável e o restante em renda fixa e/ou imóveis"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb6c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Entre 25,01 e 50% aplicado em renda variável e o restante em renda fixa e/ou imóveis"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb6d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Acima de 50% em renda variável"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/avancarButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/avancar_button_label"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup6"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

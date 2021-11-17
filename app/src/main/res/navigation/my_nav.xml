@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/Question1Fragment">
+
+    <fragment
+        android:id="@+id/Question1Fragment"
+        android:name="br.edu.infnet.analiseinvestidor.Question1Fragment"
+        android:label="fragment_question1"
+        tools:layout="@layout/fragment_question1" >
+        <action
+            android:id="@+id/action_question1Fragment_to_question2Fragment"
+            app:destination="@id/Question2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Question2Fragment"
+        android:name="br.edu.infnet.analiseinvestidor.Question2Fragment"
+        android:label="fragment_question2"
+        tools:layout="@layout/fragment_question2" >
+        <action
+            android:id="@+id/action_question2Fragment_to_question3Fragment"
+            app:destination="@id/Question3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Question3Fragment"
+        android:name="br.edu.infnet.analiseinvestidor.Question3Fragment"
+        android:label="fragment_question3"
+        tools:layout="@layout/fragment_question3" >
+        <action
+            android:id="@+id/action_question3Fragment_to_question4Fragment"
+            app:destination="@id/Question4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Question4Fragment"
+        android:name="br.edu.infnet.analiseinvestidor.Question4Fragment"
+        android:label="fragment_question4"
+        tools:layout="@layout/fragment_question4" >
+        <action
+            android:id="@+id/action_question4Fragment_to_question5Fragment"
+            app:destination="@id/Question5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Question5Fragment"
+        android:name="br.edu.infnet.analiseinvestidor.Question5Fragment"
+        android:label="fragment_question5"
+        tools:layout="@layout/fragment_question5" >
+        <action
+            android:id="@+id/action_question5Fragment_to_question6Fragment"
+            app:destination="@id/Question6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Question6Fragment"
+        android:name="br.edu.infnet.analiseinvestidor.Question6Fragment"
+        android:label="fragment_question6"
+        tools:layout="@layout/fragment_question6" >
+        <action
+            android:id="@+id/action_question6Fragment_to_question7Fragment"
+            app:destination="@id/Question7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Question7Fragment"
+        android:name="br.edu.infnet.analiseinvestidor.Question7Fragment"
+        android:label="fragment_question7"
+        tools:layout="@layout/fragment_question7" >
+        <action
+            android:id="@+id/action_Question7Fragment_to_question10Fragment"
+            app:destination="@id/question10Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question10Fragment"
+        android:name="br.edu.infnet.analiseinvestidor.Question10Fragment"
+        android:label="fragment_question10"
+        tools:layout="@layout/fragment_question10" >
+        <action
+            android:id="@+id/action_question10Fragment_to_question11Fragment"
+            app:destination="@id/question11Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question11Fragment"
+        android:name="br.edu.infnet.analiseinvestidor.Question11Fragment"
+        android:label="fragment_question11"
+        tools:layout="@layout/fragment_question11" />
+</navigation>
